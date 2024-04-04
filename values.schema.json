@@ -1,24 +1,59 @@
 {
     "properties": {
-      "name": {
-        "description": "Application name",
+      "nameOverride": {
+        "description": "nameOverride",
         "type": "string"
       },
-      "replicas": {
-        "description": "Number of replicas",
-        "type": "integer"
-      },
-      "image": {
-        "description": "Container Image",
+      "fullnameOverride": {
+        "description": "fullnameOverride",
         "type": "string"
       },
-      "version": {
-        "description": "Container image version",
+      "namespace": {
+        "description": "namespace",
         "type": "string"
       },
-      "service": {
-        "description": "Expose your application",
-        "type": "boolean"
+      "secrets": {
+        "type": "object",
+        "properties": {
+          "configs": {
+            "type": "object",
+            "properties": {
+              "enabled": {
+                "type": "boolean"
+              },
+              "autorestart": {
+                "type": "object",
+                "properties": {
+                  "enabled": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "path": {
+                "type": "string"
+              }
+            }
+          },
+          "creds": {
+            "type": "object",
+            "properties": {
+              "enabled": {
+                "type": "boolean"
+              },
+              "autorestart": {
+                "type": "object",
+                "properties": {
+                  "enabled": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "path": {
+                "type": "string"
+              }
+            }
+          }
+        }
       }
     },
     "order": [
