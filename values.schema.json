@@ -41,7 +41,7 @@
             "type": "object",
             "properties": {
               "enabled": {
-                "description": "Auto restart pod jika ada perubahan",
+                "description": "Gunakan secrets/creds",
                 "type": "boolean"
               },
               "autorestart": {
