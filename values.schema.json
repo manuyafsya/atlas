@@ -19,17 +19,20 @@
             "type": "object",
             "properties": {
               "enabled": {
+                "description": "Gunakan secrets/configs",
                 "type": "boolean"
               },
               "autorestart": {
                 "type": "object",
                 "properties": {
                   "enabled": {
+                    "description": "Auto restart pod jika ada perubahan",
                     "type": "boolean"
                   }
                 }
               },
               "path": {
+                "description": "Path secret configs di vault",
                 "type": "string"
               }
             }
