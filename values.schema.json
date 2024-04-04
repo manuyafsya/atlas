@@ -60,10 +60,10 @@
       }
     },
     "order": [
-      "name",
-      "replicas",
-      "script",
-      "json",
+      "nameOverride",
+      "fullnameOverride",
+      "namespace",
+      "secrets",
       "image",
       "version",
       "service"
