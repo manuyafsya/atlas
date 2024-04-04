@@ -41,17 +41,20 @@
             "type": "object",
             "properties": {
               "enabled": {
+                "description": "Auto restart pod jika ada perubahan",
                 "type": "boolean"
               },
               "autorestart": {
                 "type": "object",
                 "properties": {
                   "enabled": {
+                    "description": "Auto restart pod jika ada perubahan",
                     "type": "boolean"
                   }
                 }
               },
               "path": {
+                "description": "Path secret creds di vault",
                 "type": "string"
               }
             }
