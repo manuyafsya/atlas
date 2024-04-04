@@ -59,7 +59,8 @@
               }
             }
           }
-        }
+        },
+        "order": ["configs", "creds"]
       }
     },
     "order": [
@@ -67,6 +68,8 @@
       "fullnameOverride",
       "namespace",
       "secrets",
+      "configs",
+      "creds",
       "image",
       "version",
       "service"
