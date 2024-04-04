@@ -29,10 +29,7 @@
                     "description": "Auto restart pod jika ada perubahan",
                     "type": "boolean"
                   }
-                },
-                "if": { "properties": { "enabled": { "const": true } } },
-                "then": { "required": ["enabled"] },
-                "else": { "not": { "required": ["autorestart"] } }
+                }
               },
               "path": {
                 "description": "Path secret configs di vault",
