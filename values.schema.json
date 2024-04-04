@@ -35,7 +35,8 @@
                 "description": "Path secret configs di vault",
                 "type": "string"
               }
-            }
+            },
+            "order": ["enabled", "path", "autorestart"]
           },
           "creds": {
             "type": "object",
@@ -57,7 +58,8 @@
                 "description": "Path secret creds di vault",
                 "type": "string"
               }
-            }
+            },
+            "order": ["enabled", "path", "autorestart"]
           }
         },
         "order": ["configs", "creds"]
