@@ -145,6 +145,18 @@
           "args": { "type": "string" }
         },
         "order": ["enabled", "args"]
+      },
+      "migrations": {
+        "type": "object",
+        "properties": {
+          "enabled": { "type": "boolean" },
+          "type": { "type": "string" },
+          "args": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "order": ["enabled", "type", "args"]
       }
     },
     "order": [
