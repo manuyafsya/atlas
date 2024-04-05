@@ -234,7 +234,8 @@
                                     }
                                   }
                                 }
-                              }
+                              },
+                              "order": ["path", "pathType", "backend" ]
                             }
                           }
                         }
