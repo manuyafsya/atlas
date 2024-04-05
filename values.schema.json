@@ -99,6 +99,14 @@
           }
         },
         "order": ["name", "mountPath"]
+      },
+      "liveness": {
+        "type": "object",
+        "properties": {
+          "port": { "type": "integer" },
+          "type": { "description": "httpGet (/ping), exec (gRPC), tcpSocket", "type": "string" },
+          "path": { "type": "string" }
+        }
       }
     },
     "order": [

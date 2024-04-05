@@ -89,7 +89,7 @@ volumeMounts:
 liveness:
   port: 8000
   type: tcpSocket
-  path: /ping
+  path: /
   initialDelay: 30
   periodSeconds: 10
   successThreshold: 1
