@@ -126,7 +126,7 @@
               "order": ["name", "port", "targetPort","protocol"]
             }
           },
-          "headless": { "description": "loadbalance gRPC multiple pods service", "type": "boolean" }
+          "headless": { "description": "loadbalance gRPC multiple pods", "type": "boolean" }
         },
         "order": ["type", "headless", "configs"]
       }
