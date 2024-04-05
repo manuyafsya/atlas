@@ -98,8 +98,8 @@
       "fullnameOverride",
       "namespace",
       "secrets",
-      "configs",
-      "creds",
+      "volumes",
+      "volumeMounts",
       "image",
       "version",
       "service"
