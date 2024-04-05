@@ -1,7 +1,7 @@
 {
     "properties": {
       "nameOverride": {
-        "description": "nameOverride",
+        "description": "description",
         "type": "string"
       },
       "fullnameOverride": {
@@ -13,9 +13,11 @@
         "type": "string"
       },
       "secrets": {
+        "description": "description",
         "type": "object",
         "properties": {
           "configs": {
+            "description": "description",
             "type": "object",
             "properties": {
               "enabled": {
@@ -23,6 +25,7 @@
                 "type": "boolean"
               },
               "autorestart": {
+                "description": "description",
                 "type": "object",
                 "properties": {
                   "enabled": {
