@@ -67,17 +67,17 @@ secrets:
 ## google Creds names for RC is samilar with green releases
 volumes: 
   # example volume from secrets
-  # - name: service-account
-  #   secret:
-  #     secretName: atlas-sa
+  - name: service-account
+    secret:
+      secretName: atlas-sa
   # example volume from pvc
   # - name: data
   #   persistentVolumeClaim:
   #     claimName: volumes-pvc
 volumeMounts:
   # example volume from secrets
-  # - name: service-account
-  #   mountPath: /mnt
+  - name: service-account
+    mountPath: /mnt
   # example volume from pvc
   # - name: data
   #   mountPath: /data
