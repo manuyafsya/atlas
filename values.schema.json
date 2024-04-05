@@ -70,12 +70,10 @@
           "type": "object",
           "properties": {
             "name": { "type": "string" },
-            "description": "Secret Service account",
             "secret": {
               "type": "object",
               "properties": {
-                "description": "Nama secret SA",
-                "secretName": { "type": "string" }
+                "secretName": { "description": "Nama secret SA", "type": "string" }
               }
             }
           }
@@ -86,8 +84,10 @@
         "items": {
           "type": "object",
           "properties": {
-            "description": "Nama secret",
-            "name": { "type": "string" },
+            "name": { 
+                "description": "Nama secret",
+                "type": "string" 
+            },
             "mountPath": { "type": "string" }
           }
         }
