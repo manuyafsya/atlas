@@ -156,7 +156,8 @@
       "volumes",
       "volumeMounts",
       "liveness",
-      "service"
+      "service",
+      "interceptor"
     ],
     "required": [
       "name",
