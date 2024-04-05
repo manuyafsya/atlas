@@ -63,6 +63,34 @@
           }
         },
         "order": ["configs", "creds"]
+      },
+      "volumes": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "description": "Secret Service account",
+            "secret": {
+              "type": "object",
+              "properties": {
+                "description": "Nama secret SA",
+                "secretName": { "type": "string" }
+              }
+            }
+          }
+        }
+      },
+      "volumeMounts": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "description": "Nama secret",
+            "name": { "type": "string" },
+            "mountPath": { "type": "string" }
+          }
+        }
       }
     },
     "order": [
