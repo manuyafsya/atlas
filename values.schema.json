@@ -108,6 +108,25 @@
           "path": { "type": "string" }
         },
         "order": ["type", "port", "path"]
+      },
+      "service": {
+        "type": "object",
+        "properties": {
+          "type": { "type": "string" },
+          "configs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "port": { "type": "integer" },
+                "targetPort": { "type": "integer" },
+                "protocol": { "type": "string" }
+              }
+            }
+          },
+          "headless": { "type": "boolean" }
+        }
       }
     },
     "order": [
@@ -118,7 +137,6 @@
       "volumes",
       "volumeMounts",
       "liveness",
-      "version",
       "service"
     ],
     "required": [

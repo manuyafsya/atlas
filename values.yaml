@@ -99,11 +99,11 @@ liveness:
 
 service:
   type: ClusterIP
-  configs: {}
-    # - name: http
-    #   port: 80
-    #   targetPort: 8000
-    #   protocol: TCP
+  configs:
+    - name: http
+      port: 80
+      targetPort: 8000
+      protocol: TCP
     # - name: grpc
     #   port: 80
     #   targetPort: 8000
