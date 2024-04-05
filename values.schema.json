@@ -204,7 +204,8 @@
       "interceptor",
       "migrations",
       "replicaCount",
-      "autoscaling"
+      "autoscaling",
+      "resources"
     ],
     "required": [
       "name",
