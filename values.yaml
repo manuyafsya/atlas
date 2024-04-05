@@ -79,8 +79,8 @@ volumeMounts:
   - name: service-account
     mountPath: /mnt
   # example volume from pvc
-  # - name: data
-  #   mountPath: /data
+  - name: data
+    mountPath: /data
 
 ## liveness type httpGet, exec, tcpSocket
 ## httpGet require path
