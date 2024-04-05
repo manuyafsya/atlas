@@ -285,20 +285,7 @@
     "required": [
         "nameOverride",
         "fullnameOverride",
-        "namespace",
-        "image",
-        "secrets",
-        "volumes",
-        "volumeMounts",
-        "liveness",
-        "service",
-        "interceptor",
-        "migrations",
-        "replicaCount",
-        "autoscaling",
-        "resources",
-        "ingress",
-        "hostAliases"
+        "namespace"
     ],
     "title": "Values",
     "type": "object"
