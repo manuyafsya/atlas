@@ -73,9 +73,15 @@
             "secret": {
               "type": "object",
               "properties": {
-                "secretName": { "description": "Nama secret SA", "type": "string" }
+                "secretName": { "type": "string" }
               }
-            }
+            },
+            "persistentVolumeClaim": {
+                "type": "object",
+                "properties": {
+                  "claimName": { "type": "string" }
+                }
+              }
           }
         }
       },
