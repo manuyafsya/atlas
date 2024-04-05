@@ -283,10 +283,22 @@
       "hostAliases"
     ],
     "required": [
-      "name",
-      "replicas",
-      "image",
-      "version"
+        "nameOverride",
+        "fullnameOverride",
+        "namespace",
+        "image",
+        "secrets",
+        "volumes",
+        "volumeMounts",
+        "liveness",
+        "service",
+        "interceptor",
+        "migrations",
+        "replicaCount",
+        "autoscaling",
+        "resources",
+        "ingress",
+        "hostAliases"
     ],
     "title": "Values",
     "type": "object"
