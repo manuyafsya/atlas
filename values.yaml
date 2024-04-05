@@ -71,9 +71,9 @@ volumes:
     secret:
       secretName: atlas-sa
   # example volume from pvc
-  # - name: data
-  #   persistentVolumeClaim:
-  #     claimName: volumes-pvc
+  - name: data
+    persistentVolumeClaim:
+      claimName: volumes-pvc
 volumeMounts:
   # example volume from secrets
   - name: service-account
