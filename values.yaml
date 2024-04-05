@@ -168,20 +168,20 @@ resources:
 ## you can modify ingress.rules freely
 ingress:
   enabled: false
-  configs: {}
-    # - ingressName: "internal"
-    #   className: "internal-nginx"
-    #   rules:
-    #     - host: atlas.privyinfra.id
-    #       http:
-    #         paths:
-    #           - path: /rc(?:\/|$)(.*)
-    #             pathType: Prefix
-    #             backend:
-    #               service:
-    #                 name: rc-atlas
-    #                 port:
-    #                   number: 80
+  configs:
+    - ingressName: "internal"
+      className: "internal-nginx"
+      rules:
+        - host: atlas.domain.tld
+          http:
+            paths:
+              - path: /rc(?:\/|$)(.*)
+                pathType: Prefix
+                backend:
+                  service:
+                    name: rc-atlas
+                    port:
+                      number: 80
     # - ingressName: "b2b-ingress"
     #   className: "internal-nginx"
     #   rules:
