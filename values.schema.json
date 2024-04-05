@@ -125,7 +125,7 @@
               }
             }
           },
-          "headless": { "type": "boolean" }
+          "headless": { "description": "loadbalance multiple pods service", "type": "boolean" }
         }
       }
     },
