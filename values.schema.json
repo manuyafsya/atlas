@@ -5,11 +5,11 @@
         "type": "string"
       },
       "fullnameOverride": {
-        "description": "fullnameOverride",
+        "description": "description",
         "type": "string"
       },
       "namespace": {
-        "description": "namespace",
+        "description": "description",
         "type": "string"
       },
       "secrets": {
@@ -21,7 +21,7 @@
             "type": "object",
             "properties": {
               "enabled": {
-                "description": "Gunakan secrets/configs",
+                "description": "description",
                 "type": "boolean"
               },
               "autorestart": {
@@ -29,36 +29,38 @@
                 "type": "object",
                 "properties": {
                   "enabled": {
-                    "description": "Auto restart pod jika ada perubahan",
+                    "description": "description",
                     "type": "boolean"
                   }
                 }
               },
               "path": {
-                "description": "Path secret configs di vault",
+                "description": "description",
                 "type": "string"
               }
             },
             "order": ["enabled", "path", "autorestart"]
           },
           "creds": {
+            "description": "description",
             "type": "object",
             "properties": {
               "enabled": {
-                "description": "Gunakan secrets/creds",
+                "description": "description",
                 "type": "boolean"
               },
               "autorestart": {
+                "description": "description",
                 "type": "object",
                 "properties": {
                   "enabled": {
-                    "description": "Auto restart pod jika ada perubahan",
+                    "description": "description",
                     "type": "boolean"
                   }
                 }
               },
               "path": {
-                "description": "Path secret creds di vault",
+                "description": "description",
                 "type": "string"
               }
             },
@@ -68,21 +70,28 @@
         "order": ["configs", "creds"]
       },
       "volumes": {
+        "description": "description",
         "type": "array",
         "items": {
+          "description": "description",
           "type": "object",
           "properties": {
-            "name": { "type": "string" },
+            "name": { 
+              "description": "description",
+              "type": "string" 
+            },
             "secret": {
+              "description": "description",
               "type": "object",
               "properties": {
-                "secretName": { "type": "string" }
+                "secretName": { "description": "description", "type": "string" }
               }
             },
             "persistentVolumeClaim": {
+                "description": "description",
                 "type": "object",
                 "properties": {
-                  "claimName": { "type": "string" }
+                  "claimName": { "description": "description", "type": "string" }
                 }
               }
           }
@@ -90,39 +99,45 @@
         "order": ["name", "secret", "persistentVolumeClaim"]
       },
       "volumeMounts": {
+        "description": "description",
         "type": "array",
         "items": {
+          "description": "description",
           "type": "object",
           "properties": {
             "name": { 
-                "description": "Nama secret",
+                "description": "description",
                 "type": "string" 
             },
-            "mountPath": { "type": "string" }
+            "mountPath": { "description": "description", "type": "string" }
           }
         },
         "order": ["name", "mountPath"]
       },
       "liveness": {
+        "description": "description",
         "type": "object",
         "properties": {
-          "port": { "type": "integer" },
-          "type": { "description": "httpGet (/path) | exec (gRPC) | tcpSocket", "type": "string" },
-          "path": { "type": "string" }
+          "port": { "description": "description", "type": "integer" },
+          "type": { "description": "description", "type": "string" },
+          "path": { "description": "description", "type": "string" }
         },
         "order": ["type", "port", "path"]
       },
       "service": {
+        "description": "description",
         "type": "object",
         "properties": {
-          "type": { "type": "string" },
+          "type": { "description": "description", "type": "string" },
           "configs": {
+            "description": "description",
             "type": "array",
             "items": {
+              "description": "description",
               "type": "object",
               "properties": {
-                "name": { "type": "string" },
-                "port": { "type": "integer" },
+                "name": { "description": "description", "type": "string" },
+                "port": { "description": "description", "type": "integer" },
                 "targetPort": { "type": "integer" },
                 "protocol": { "type": "string" }
               },
