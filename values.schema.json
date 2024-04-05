@@ -129,6 +129,14 @@
           "headless": { "description": "loadbalance gRPC multiple pods", "type": "boolean" }
         },
         "order": ["type", "headless", "configs"]
+      },
+      "image": {
+        "type": "object",
+        "properties": {
+          "repository": { "type": "string" },
+          "tag": { "type": "string" }
+        },
+        "order": ["repository", "tag"]
       }
     },
     "order": [
