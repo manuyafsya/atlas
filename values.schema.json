@@ -137,6 +137,14 @@
           "tag": { "type": "string" }
         },
         "order": ["repository", "tag"]
+      },
+      "interceptor": {
+        "type": "object",
+        "properties": {
+          "enabled": { "type": "boolean" },
+          "args": { "type": "string" }
+        },
+        "order": ["enabled", "args"]
       }
     },
     "order": [
