@@ -169,7 +169,8 @@
       "volumeMounts",
       "liveness",
       "service",
-      "interceptor"
+      "interceptor",
+      "migrations"
     ],
     "required": [
       "name",
