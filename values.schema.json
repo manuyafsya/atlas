@@ -138,114 +138,133 @@
               "properties": {
                 "name": { "description": "description", "type": "string" },
                 "port": { "description": "description", "type": "integer" },
-                "targetPort": { "type": "integer" },
-                "protocol": { "type": "string" }
+                "targetPort": { "description": "description", "type": "integer" },
+                "protocol": { "description": "description", "type": "string" }
               },
               "order": ["name", "port", "targetPort","protocol"]
             }
           },
-          "headless": { "description": "loadbalance gRPC multiple pods", "type": "boolean" }
+          "headless": { "description": "description", "type": "boolean" }
         },
         "order": ["type", "headless", "configs"]
       },
       "image": {
+        "description": "description",
         "type": "object",
         "properties": {
-          "repository": { "type": "string" },
-          "tag": { "type": "string" }
+          "repository": { "description": "description", "type": "string" },
+          "tag": { "description": "description", "type": "string" }
         },
         "order": ["repository", "tag"]
       },
       "interceptor": {
+        "description": "description",
         "type": "object",
         "properties": {
-          "enabled": { "type": "boolean" },
-          "args": { "type": "string" }
+          "enabled": { "description": "description", "type": "boolean" },
+          "args": { "description": "description", "type": "string" }
         },
         "order": ["enabled", "args"]
       },
       "migrations": {
+        "description": "description",
         "type": "object",
         "properties": {
-          "enabled": { "type": "boolean" },
-          "type": { "type": "string" },
+          "enabled": { "description": "description", "type": "boolean" },
+          "type": { "description": "description", "type": "string" },
           "args": {
+            "description": "description",
             "type": "array",
-            "items": { "type": "string" }
+            "items": { "description": "description", "type": "string" }
           }
         },
         "order": ["enabled", "type", "args"]
       },
-      "replicaCount": { "type": "integer" },
+      "replicaCount": { "description": "description", "type": "integer" },
       "autoscaling": {
+        "description": "description",
         "type": "object",
         "properties": {
-          "enabled": { "type": "boolean" },
-          "minReplicas": { "type": "integer" },
-          "maxReplicas": { "type": "integer" },
-          "averageUtilMem": { "type": "integer" },
-          "averageUtilCpu": { "type": "integer" }
+          "enabled": { "description": "description", "type": "boolean" },
+          "minReplicas": { "description": "description", "type": "integer" },
+          "maxReplicas": { "description": "description", "type": "integer" },
+          "averageUtilMem": { "description": "description", "type": "integer" },
+          "averageUtilCpu": { "description": "description", "type": "integer" }
         },
         "order": ["enabled", "minReplicas", "maxReplicas", "averageUtilMem", "averageUtilCpu" ]
       },
       "resources": {
+        "description": "description",
         "type": "object",
         "properties": {
           "limits": {
+            "description": "description",
             "type": "object",
             "properties": {
-              "cpu": { "type": "string" },
-              "memory": { "type": "string" }
+              "cpu": { "description": "description", "type": "string" },
+              "memory": { "description": "description", "type": "string" }
             }
           },
           "requests": {
+            "description": "description",
             "type": "object",
             "properties": {
-              "cpu": { "type": "string" },
-              "memory": { "type": "string" }
+              "cpu": { "description": "description", "type": "string" },
+              "memory": { "description": "description", "type": "string" }
             }
           }
         },
         "order": ["limits", "requests" ]
       },
       "ingress": {
+        "description": "description",
         "type": "object",
         "properties": {
-          "enabled": { "type": "boolean" },
+          "enabled": { "description": "description", "type": "boolean" },
           "configs": {
+            "description": "description",
             "type": "array",
             "items": {
+              "description": "description",
               "type": "object",
               "properties": {
-                "ingressName": { "type": "string" },
-                "className": { "type": "string" },
+                "ingressName": { "description": "description", "type": "string" },
+                "className": { "description": "description", "type": "string" },
                 "rules": {
+                  "description": "description",
                   "type": "array",
                   "items": {
+                    "description": "description",
                     "type": "object",
                     "properties": {
-                      "host": { "type": "string" },
+                      "host": { "description": "description", "type": "string" },
                       "http": {
+                        "description": "description",
                         "type": "object",
                         "properties": {
                           "paths": {
+                            "description": "description",
                             "type": "array",
                             "items": {
+                              "description": "description",
                               "type": "object",
                               "properties": {
-                                "path": { "type": "string" },
-                                "pathType": { "type": "string" },
+                                "path": { "description": "description", "type": "string" },
+                                "pathType": { "description": "description", "type": "string" },
                                 "backend": {
+                                  "description": "description",
                                   "type": "object",
                                   "properties": {
                                     "service": {
+                                      "description": "description",
                                       "type": "object",
                                       "properties": {
-                                        "name": { "type": "string" },
+                                        "name": { "description": "description", "type": "string" },
                                         "port": {
+                                          "description": "description",
                                           "type": "object",
                                           "properties": {
-                                            "number": { "type": "integer" }
+                                            "number": { "description": "description", "type": "integer" }
                                           }
                                         }
                                       }
@@ -268,14 +287,17 @@
         }
       },
       "hostAliases": {
+        "description": "description",
         "type": "array",
         "items": {
+          "description": "description",
           "type": "object",
           "properties": {
-            "ip": { "type": "string" },
+            "ip": { "description": "description", "type": "string" },
             "hostnames": {
+              "description": "description",
               "type": "array",
-              "items": { "type": "string" }
+              "items": { "description": "description", "type": "string" }
             }
           },
           "order": ["ip", "hostnames"]
@@ -306,5 +328,6 @@
         "namespace"
     ],
     "title": "Values",
+    "description": "description",
     "type": "object"
   }
