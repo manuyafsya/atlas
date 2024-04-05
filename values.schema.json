@@ -279,7 +279,8 @@
       "replicaCount",
       "autoscaling",
       "resources",
-      "ingress"
+      "ingress",
+      "hostAliases"
     ],
     "required": [
       "name",
