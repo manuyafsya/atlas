@@ -158,6 +158,7 @@
         },
         "order": ["enabled", "type", "args"]
       },
+      "replicaCount": { "type": "integer" },
       "autoscaling": {
         "type": "object",
         "properties": {
@@ -182,6 +183,7 @@
       "service",
       "interceptor",
       "migrations",
+      "replicaCount",
       "autoscaling"
     ],
     "required": [
