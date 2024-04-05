@@ -104,7 +104,7 @@
         "type": "object",
         "properties": {
           "port": { "type": "integer" },
-          "type": { "description": "httpGet (/ping) | exec (gRPC) | tcpSocket", "type": "string" },
+          "type": { "description": "httpGet (/path) | exec (gRPC) | tcpSocket", "type": "string" },
           "path": { "type": "string" }
         },
         "order": ["type", "port", "path"]
