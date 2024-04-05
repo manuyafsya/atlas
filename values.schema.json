@@ -83,7 +83,8 @@
                 }
               }
           }
-        }
+        },
+        "order": ["name", "secret", "persistentVolumeClaim"]
       },
       "volumeMounts": {
         "type": "array",
@@ -96,7 +97,8 @@
             },
             "mountPath": { "type": "string" }
           }
-        }
+        },
+        "order": ["name", "mountPath"]
       }
     },
     "order": [
