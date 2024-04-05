@@ -122,11 +122,13 @@
                 "port": { "type": "integer" },
                 "targetPort": { "type": "integer" },
                 "protocol": { "type": "string" }
-              }
+              },
+              "order": ["name", "port", "targetPort","protocol"]
             }
           },
-          "headless": { "description": "loadbalance multiple pods service", "type": "boolean" }
-        }
+          "headless": { "description": "loadbalance gRPC multiple pods service", "type": "boolean" }
+        },
+        "order": ["type", "headless", "configs"]
       }
     },
     "order": [
