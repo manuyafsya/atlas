@@ -117,7 +117,7 @@
       "secrets",
       "volumes",
       "volumeMounts",
-      "image",
+      "liveness",
       "version",
       "service"
     ],
