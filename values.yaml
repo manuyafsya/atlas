@@ -219,11 +219,10 @@ annotations:
     "helm.sh/hook-weight": "-10"
 
 ## in case we need hostAliases ##
-hostAliases: {}
-  # - ip: "8.8.8.8"
-  #   hostnames:
-  #   - "google.com"
-  #   - "www.google.com"
+hostAliases:
+  - ip: "8.8.8.8"
+    hostnames:
+    - "google.com"
   # - ip: "1.1.1.1"
   #   hostnames:
   #   - "cloudflare.com"
